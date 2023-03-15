@@ -1,0 +1,37 @@
+# docker-compose up -d
+version: '3'
+services:
+  mysql_db_pinterest:
+    image: mysql
+    container_name: mysql_db_pinterest
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=db_pinterest
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_db_pinterest:/var/lib/mysql
+    networks:
+      - pinterest-node-network
+  node:
+    depends_on:
+      - mysql_db_pinterest
+    build: .
+    container_name: cons_node_pinterest
+    environment:
+      - DATABASE=db_pinterest
+      - USERNAME=root
+      - PASSWORD=1234
+      - HOST=mysql_db_pinterest
+      - PORT=3306
+      - DIALECT=mysql
+    ports:
+      - 8080:8080
+    networks:
+      - pinterest-node-network
+
+volumes:
+  mysql_db_pinterest:
+    driver: local
+networks:
+  pinterest-node-network:

@@ -89,7 +89,7 @@ const deletePhoto = async (req, res) => {
     res.send("Xoa hinh thanh cong.");
   } catch (error) {
     console.log(error);
-    res.send("Error delete photo by id BE.");
+    res.send("Error delete photo BE.");
   }
 };
 module.exports = {

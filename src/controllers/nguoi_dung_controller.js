@@ -4,7 +4,6 @@ const models = initModels(sequelize);
 const bcrypt = require("bcrypt");
 const { successCode, failCode } = require("../configs/response");
 const { decodeToken } = require("../configs/jwt");
-const uploadAvatar = require("../controllers/uploadControllers");
 
 const getUsers = async (req, res) => {
   try {
@@ -33,7 +32,7 @@ const updateUser = async (req, res) => {
       mat_khau: bcrypt.hashSync(mat_khau, 10),
       ho_ten,
       tuoi,
-      anh_dai_dien: process.cwd() + "/public/avatar" + res.req.file.filename,
+      anh_dai_dien: process.cwd() + "/public/photo" + res.req.file.filename,
     };
     await models.nguoi_dung.update(modelUser, {
       where: {
@@ -41,7 +40,7 @@ const updateUser = async (req, res) => {
       },
     });
     console.log(email);
-    successCode(res, modelUser, "Cập nhật thành công!");
+    successCode(res, "", "Cập nhật thành công!");
   } catch (error) {
     console.log(error);
     failCode(res, "", "Lỗi update user BE.");

@@ -1,0 +1,544 @@
+{
+	"info": {
+		"_postman_id": "76906f0e-2fc6-46de-be30-7e3a3c4b2566",
+		"name": "Photo App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25573991"
+	},
+	"item": [
+		{
+			"name": "Photo",
+			"item": [
+				{
+					"name": "get all photos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3OTAzODY4MSwiZXhwIjoxNjc5MDQwNDgxfQ.-MsX-rf3kz3Q3fg3ZjqmEDDC5aIKYJnF3KG00Pb_g3g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/photo",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"photo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find photo by name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/photo/pa",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"photo",
+								"pa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get photo detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/photo/detail/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"photo",
+								"detail",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get photos by user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/photo/get/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"photo",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a photo by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/photo/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"photo",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post a photo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODg5NzM4NSwiZXhwIjoxNjc4ODk5MTg1fQ.u5vnMWVaVXTvXG3rqNlVfuxpNxaTyR5Tc3ognd1VjdY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/tan/Desktop/captain.jpg"
+								},
+								{
+									"key": "photo_info",
+									"value": "{\n    \"ten_hinh\": \"My Photo\",\n    \"mo_ta\": \"This is my photo!!!\"\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/photo",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"photo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/user",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjozOCwiZW1haWwiOiJlZ2ViYnkxMUBkb3QuZ292IiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJOQU1FIE1FIiwidHVvaSI6bnVsbCwiYW5oX2RhaV9kaWVuIjoiTXkgYXZhdGFyIFVSTCIsImlhdCI6MTY3ODIyMjI0MSwiZXhwIjoxNjc4MjIyODQxfQ.Co0NVPbpykFwVlm5OIiwDV3G6lU-bDL8YOA0f1i8y-8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/user/info",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODQ1NTY0NiwiZXhwIjoxNjc4NDU2MjQ2fQ.-pCW7fGjZZsvGAMrpb5Zu6bcqz75FWhBbmifgn2Htlw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/tan/Desktop/captain.jpg"
+								},
+								{
+									"key": "info",
+									"value": "{\n\"email\": \"egebby11@dot.gov\",\n\"mat_khau\": \"1234\",\n\"tuoi\": 18,\n\"ho_ten\": \"NAME ME\"\n}",
+									"contentType": "application/json",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/user",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign up",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"testupload@gmail.com\",\n    \"mat_khau\": \"1234\",\n    \"ho_ten\": \"Test Upload\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/user",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user/54",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user",
+								"54"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "get all comments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/comment",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get comments by photo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/comment/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"comment",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post a comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"noi_dung\": \"This is one of my favorite photos\",\n    \"nguoi_dung_id\": 1,\n    \"hinh_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/comment",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"comment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pin",
+			"item": [
+				{
+					"name": "get all pins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/pin/getPins",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"pin",
+								"getPins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get pins by user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODQ1OTAzMywiZXhwIjoxNjc4NDYwODMzfQ.TKmfJin_d1Naxemtl5z5xExwif7UBagdWQZ0kQLjTho",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/pin/31",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"pin",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check if photo pinned",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo1MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiIiwiaG9fdGVuIjoiVGVzdCBUZXN0IFRlc3QiLCJ0dW9pIjpudWxsLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY3ODcwOTYzOCwiZXhwIjoxNjc4NzExNDM4fQ.IfCO1Ssq71n7eJTej2p-NsMYQjQASAaS_z_TdQ1OYQk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nguoi_dung_id\": 3,\n    \"hinh_id\": 31\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/pin/check",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"pin",
+								"check"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authorization",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test@gmail.com\",\n    \"mat_khau\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/auth/login",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "localhost:8080/api",
+			"type": "string"
+		}
+	]
+}
